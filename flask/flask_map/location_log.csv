@@ -1,0 +1,7 @@
+latitude,longitude
+34.7000,135.5000
+34.7010,135.5020
+34.7025,135.5050
+34.7050,135.5100
+20.6,105.6,
+${location.latitude},${location.longitude},

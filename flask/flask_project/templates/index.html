@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Data Viewer</title>
+</head>
+<body>
+    <h1>受信したセンサーデータ一覧</h1>
+    <table border="1">
+        <tr>
+            <th>温度</th>
+            <th>緯度</th>
+            <th>経度</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.temperature }}</td>
+            <td>{{ row.latitude }}</td>
+            <td>{{ row.longitude }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
