@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "motoLogger_ESP32",
+			"path": "motoLogger_ESP32"
+		},
+		{
+			"name": "BLEtest",
+			"path": "BLEtest"
+		}
+	],
+	"settings": {}
+}

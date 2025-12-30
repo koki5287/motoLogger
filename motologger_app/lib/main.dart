@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
-import 'screens/monitor_screen.dart';
+import 'ble_test.dart';
 
 void main() {
-  runApp(const MotoLoggerApp());
+  runApp(const MyApp());
 }
 
-class MotoLoggerApp extends StatelessWidget {
-  const MotoLoggerApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MotoLogger',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      home: Scaffold(
+        appBar: AppBar(title: const Text('BLE Test')),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              connectAndRead();
+            },
+            child: const Text('Connect & Read'),
+          ),
+        ),
       ),
-      home: const MonitorScreen(),
     );
   }
 }
